@@ -14,6 +14,9 @@
 		F3330FF82C14A6FD00C3CB95 /* Rental_ServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3330FF72C14A6FD00C3CB95 /* Rental_ServiceUITests.swift */; };
 		F3330FFA2C14A6FD00C3CB95 /* Rental_ServiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3330FF92C14A6FD00C3CB95 /* Rental_ServiceUITestsLaunchTests.swift */; };
 		F33310122C14A7E400C3CB95 /* MainTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33310112C14A7E400C3CB95 /* MainTabbarView.swift */; };
+		F36819D92C21AC20000812F9 /* CustomSeachbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36819D82C21AC20000812F9 /* CustomSeachbar.swift */; };
+		F36819DB2C21ACEF000812F9 /* Brands.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36819DA2C21ACEF000812F9 /* Brands.swift */; };
+		F36819DF2C21ADDF000812F9 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36819DE2C21ADDF000812F9 /* ExploreViewModel.swift */; };
 		F39D479E2C17217200A5074C /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D479D2C17217200A5074C /* ExploreView.swift */; };
 		F3E89E9B2C19BA3900E85249 /* NavigationStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E89E9A2C19BA3900E85249 /* NavigationStackModifier.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +50,9 @@
 		F3330FF92C14A6FD00C3CB95 /* Rental_ServiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rental_ServiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F33310112C14A7E400C3CB95 /* MainTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarView.swift; sourceTree = "<group>"; };
 		F33310132C14A9EF00C3CB95 /* Rental-Service-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Rental-Service-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F36819D82C21AC20000812F9 /* CustomSeachbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSeachbar.swift; sourceTree = "<group>"; };
+		F36819DA2C21ACEF000812F9 /* Brands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brands.swift; sourceTree = "<group>"; };
+		F36819DE2C21ADDF000812F9 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		F39D479D2C17217200A5074C /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		F3E89E9A2C19BA3900E85249 /* NavigationStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +151,7 @@
 		F33310072C14A74A00C3CB95 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F36819DA2C21ACEF000812F9 /* Brands.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,7 +202,8 @@
 		F333100D2C14A78100C3CB95 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
-				F39D479D2C17217200A5074C /* ExploreView.swift */,
+				F36819DC2C21ADB7000812F9 /* ViewModels */,
+				F36819DD2C21ADC3000812F9 /* Views */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -221,6 +229,23 @@
 				F33310112C14A7E400C3CB95 /* MainTabbarView.swift */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		F36819DC2C21ADB7000812F9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F36819DE2C21ADDF000812F9 /* ExploreViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F36819DD2C21ADC3000812F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F36819D82C21AC20000812F9 /* CustomSeachbar.swift */,
+				F39D479D2C17217200A5074C /* ExploreView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F3E89E992C19BA1D00E85249 /* ViewModifiers */ = {
@@ -362,9 +387,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3330FDD2C14A6FC00C3CB95 /* Rental_ServiceApp.swift in Sources */,
+				F36819DB2C21ACEF000812F9 /* Brands.swift in Sources */,
 				F3E89E9B2C19BA3900E85249 /* NavigationStackModifier.swift in Sources */,
 				F39D479E2C17217200A5074C /* ExploreView.swift in Sources */,
+				F36819D92C21AC20000812F9 /* CustomSeachbar.swift in Sources */,
 				F33310122C14A7E400C3CB95 /* MainTabbarView.swift in Sources */,
+				F36819DF2C21ADDF000812F9 /* ExploreViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

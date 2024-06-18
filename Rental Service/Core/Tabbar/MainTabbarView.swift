@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainTabbarView: View {
     @State private var selectedtab: Int = 0
+    @StateObject private var viewModel = ExploreViewModel()
     var body: some View {
         TabView {
             ExploreView()
