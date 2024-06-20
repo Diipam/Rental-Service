@@ -12,7 +12,7 @@ struct MainTabbarView: View {
     @StateObject private var viewModel = ExploreViewModel()
     var body: some View {
         TabView {
-            ExploreView()
+            ExploreView(viewModel: viewModel)
                 .tabItem {
                     VStack {
                         Image(systemName: "magnifyingglass")
@@ -23,7 +23,7 @@ struct MainTabbarView: View {
                         selectedtab = 0
                     }
                 }
-            Text("Favourite")
+            FavouriteView(viewModel: viewModel)
                 .tabItem {
                     VStack {
                         Image(systemName: "heart")

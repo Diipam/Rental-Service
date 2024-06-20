@@ -1,13 +1,13 @@
 //
-//  CustomSeachbar.swift
+//  CustomSearchbar.swift
 //  Rental Service
 //
-//  Created by Smart Solar Nepal on 18/06/2024.
+//  Created by Smart Solar Nepal on 19/06/2024.
 //
 
 import SwiftUI
 
-struct CustomSeachbar: View {
+struct CustomSearchbar: View {
     var body: some View {
         Button(action: {}, label: {
             HStack {
@@ -32,6 +32,5 @@ struct CustomSeachbar: View {
 }
 
 #Preview {
-    CustomSeachbar()
+    CustomSearchbar()
 }
- 

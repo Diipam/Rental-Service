@@ -14,9 +14,14 @@
 		F3330FF82C14A6FD00C3CB95 /* Rental_ServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3330FF72C14A6FD00C3CB95 /* Rental_ServiceUITests.swift */; };
 		F3330FFA2C14A6FD00C3CB95 /* Rental_ServiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3330FF92C14A6FD00C3CB95 /* Rental_ServiceUITestsLaunchTests.swift */; };
 		F33310122C14A7E400C3CB95 /* MainTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33310112C14A7E400C3CB95 /* MainTabbarView.swift */; };
-		F36819D92C21AC20000812F9 /* CustomSeachbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36819D82C21AC20000812F9 /* CustomSeachbar.swift */; };
 		F36819DB2C21ACEF000812F9 /* Brands.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36819DA2C21ACEF000812F9 /* Brands.swift */; };
 		F36819DF2C21ADDF000812F9 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36819DE2C21ADDF000812F9 /* ExploreViewModel.swift */; };
+		F36819E12C22958C000812F9 /* CustomSearchbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36819E02C22958C000812F9 /* CustomSearchbar.swift */; };
+		F36819E32C23FD3F000812F9 /* PopularBrandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36819E22C23FD3F000812F9 /* PopularBrandsView.swift */; };
+		F36819E52C240316000812F9 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36819E42C240316000812F9 /* Car.swift */; };
+		F36819E82C240639000812F9 /* CustomCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36819E72C240639000812F9 /* CustomCarView.swift */; };
+		F36819EA2C242C7F000812F9 /* TopCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36819E92C242C7F000812F9 /* TopCarView.swift */; };
+		F36819ED2C24372E000812F9 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36819EC2C24372E000812F9 /* FavouriteView.swift */; };
 		F39D479E2C17217200A5074C /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D479D2C17217200A5074C /* ExploreView.swift */; };
 		F3E89E9B2C19BA3900E85249 /* NavigationStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E89E9A2C19BA3900E85249 /* NavigationStackModifier.swift */; };
 /* End PBXBuildFile section */
@@ -50,9 +55,14 @@
 		F3330FF92C14A6FD00C3CB95 /* Rental_ServiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rental_ServiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F33310112C14A7E400C3CB95 /* MainTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarView.swift; sourceTree = "<group>"; };
 		F33310132C14A9EF00C3CB95 /* Rental-Service-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Rental-Service-Info.plist"; sourceTree = SOURCE_ROOT; };
-		F36819D82C21AC20000812F9 /* CustomSeachbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSeachbar.swift; sourceTree = "<group>"; };
 		F36819DA2C21ACEF000812F9 /* Brands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brands.swift; sourceTree = "<group>"; };
 		F36819DE2C21ADDF000812F9 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		F36819E02C22958C000812F9 /* CustomSearchbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchbar.swift; sourceTree = "<group>"; };
+		F36819E22C23FD3F000812F9 /* PopularBrandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularBrandsView.swift; sourceTree = "<group>"; };
+		F36819E42C240316000812F9 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		F36819E72C240639000812F9 /* CustomCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarView.swift; sourceTree = "<group>"; };
+		F36819E92C242C7F000812F9 /* TopCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCarView.swift; sourceTree = "<group>"; };
+		F36819EC2C24372E000812F9 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 		F39D479D2C17217200A5074C /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		F3E89E9A2C19BA3900E85249 /* NavigationStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				F36819DA2C21ACEF000812F9 /* Brands.swift */,
+				F36819E42C240316000812F9 /* Car.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,6 +206,7 @@
 		F333100C2C14A77D00C3CB95 /* Favourites */ = {
 			isa = PBXGroup;
 			children = (
+				F36819EB2C243710000812F9 /* View */,
 			);
 			path = Favourites;
 			sourceTree = "<group>";
@@ -211,6 +223,7 @@
 		F333100E2C14A78500C3CB95 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F36819E62C240629000812F9 /* Views */,
 				F3E89E992C19BA1D00E85249 /* ViewModifiers */,
 			);
 			path = Components;
@@ -242,10 +255,28 @@
 		F36819DD2C21ADC3000812F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F36819D82C21AC20000812F9 /* CustomSeachbar.swift */,
 				F39D479D2C17217200A5074C /* ExploreView.swift */,
+				F36819E02C22958C000812F9 /* CustomSearchbar.swift */,
+				F36819E22C23FD3F000812F9 /* PopularBrandsView.swift */,
+				F36819E92C242C7F000812F9 /* TopCarView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F36819E62C240629000812F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F36819E72C240639000812F9 /* CustomCarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F36819EB2C243710000812F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F36819EC2C24372E000812F9 /* FavouriteView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F3E89E992C19BA1D00E85249 /* ViewModifiers */ = {
@@ -386,12 +417,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36819EA2C242C7F000812F9 /* TopCarView.swift in Sources */,
+				F36819E82C240639000812F9 /* CustomCarView.swift in Sources */,
 				F3330FDD2C14A6FC00C3CB95 /* Rental_ServiceApp.swift in Sources */,
 				F36819DB2C21ACEF000812F9 /* Brands.swift in Sources */,
+				F36819E32C23FD3F000812F9 /* PopularBrandsView.swift in Sources */,
 				F3E89E9B2C19BA3900E85249 /* NavigationStackModifier.swift in Sources */,
 				F39D479E2C17217200A5074C /* ExploreView.swift in Sources */,
-				F36819D92C21AC20000812F9 /* CustomSeachbar.swift in Sources */,
+				F36819E52C240316000812F9 /* Car.swift in Sources */,
 				F33310122C14A7E400C3CB95 /* MainTabbarView.swift in Sources */,
+				F36819E12C22958C000812F9 /* CustomSearchbar.swift in Sources */,
+				F36819ED2C24372E000812F9 /* FavouriteView.swift in Sources */,
 				F36819DF2C21ADDF000812F9 /* ExploreViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,9 +589,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Rental Service/Preview Content\"";
+				DEVELOPMENT_TEAM = RJC4MPJ9ZS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rental-Service-Info.plist";
@@ -563,6 +601,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -581,9 +620,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Rental Service/Preview Content\"";
+				DEVELOPMENT_TEAM = RJC4MPJ9ZS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rental-Service-Info.plist";
@@ -591,6 +632,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
