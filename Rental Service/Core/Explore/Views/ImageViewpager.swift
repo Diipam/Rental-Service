@@ -7,20 +7,21 @@
 
 import SwiftUI
 
+
 struct ImageViewPager: View {
     @StateObject private var viewModel: ExploreViewModel
     @Environment(\.dismiss) var dismiss
     let heightTabView: CGFloat = UIScreen.main.bounds.height / 3
-    @State private var isFavourite: Bool
+    @State private var isFavorite: Bool
     let index: Int
     init(viewModel: ExploreViewModel, index: Int) {
         self._viewModel = StateObject(wrappedValue: viewModel)
         self.index = index
-        self._isFavourite = State(initialValue: viewModel.car[index].isFavourite)
+        self._isFavorite = State(initialValue: viewModel.cars[index].isFavorite)
     }
     var body: some View {
         TabView {
-            ForEach(viewModel.car[index].imageName,id: \.self) { imageName in
+            ForEach(viewModel.cars[index].imagesNames,id: \.self) { imageName in
                 Image(imageName)
                     .resizable()
                     .scaledToFill()
@@ -43,9 +44,9 @@ struct ImageViewPager: View {
                         .frame(width: 40, height: 40)
                         .overlay {
                             Button {
-                                isFavourite.toggle()
+                                isFavorite.toggle()
                             } label: {
-                                Image(systemName: isFavourite ? "heart.fill" : "heart")
+                                Image(systemName: isFavorite ? "heart.fill" : "heart")
                                     .foregroundStyle(.red)
                             }
 

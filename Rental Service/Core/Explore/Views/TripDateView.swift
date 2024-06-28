@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+
 struct TripDateView: View {
     var currentYear = Calendar.current.component(.year, from: Date())
     var currentMonth = Calendar.current.component(.month, from: Date())

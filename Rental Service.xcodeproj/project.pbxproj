@@ -30,6 +30,8 @@
 		F3682E382C2E8C6300616EC1 /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682E372C2E8C6300616EC1 /* TripsView.swift */; };
 		F3682E3A2C2E8CC500616EC1 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682E392C2E8CC500616EC1 /* EditProfileView.swift */; };
 		F3682E3C2C2E8CCF00616EC1 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682E3B2C2E8CCF00616EC1 /* MoreView.swift */; };
+		F3682E3E2C2E8D8400616EC1 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682E3D2C2E8D8400616EC1 /* InboxView.swift */; };
+		F3682E402C2E8D9C00616EC1 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3682E3F2C2E8D9C00616EC1 /* NotificationsView.swift */; };
 		F39D479E2C17217200A5074C /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D479D2C17217200A5074C /* ExploreView.swift */; };
 		F3E89E9B2C19BA3900E85249 /* NavigationStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E89E9A2C19BA3900E85249 /* NavigationStackModifier.swift */; };
 /* End PBXBuildFile section */
@@ -79,6 +81,8 @@
 		F3682E372C2E8C6300616EC1 /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
 		F3682E392C2E8CC500616EC1 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		F3682E3B2C2E8CCF00616EC1 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		F3682E3D2C2E8D8400616EC1 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		F3682E3F2C2E8D9C00616EC1 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		F39D479D2C17217200A5074C /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		F3E89E9A2C19BA3900E85249 /* NavigationStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,6 +221,8 @@
 		F333100B2C14A77A00C3CB95 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
+				F3682E3D2C2E8D8400616EC1 /* InboxView.swift */,
+				F3682E3F2C2E8D9C00616EC1 /* NotificationsView.swift */,
 			);
 			path = Inbox;
 			sourceTree = "<group>";
@@ -278,10 +284,10 @@
 				F36819EE2C2446D9000812F9 /* DetailView.swift */,
 				F39D479D2C17217200A5074C /* ExploreView.swift */,
 				F36819F02C244EE7000812F9 /* ImageViewpager.swift */,
+				F3682E352C2E83DC00616EC1 /* MyInsurance.swift */,
 				F36819E22C23FD3F000812F9 /* PopularBrandsView.swift */,
 				F36819E92C242C7F000812F9 /* TopCarsView.swift */,
 				F3682E332C2E83C300616EC1 /* TripDateView.swift */,
-				F3682E352C2E83DC00616EC1 /* MyInsurance.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -444,6 +450,7 @@
 				F36819EA2C242C7F000812F9 /* TopCarsView.swift in Sources */,
 				F36819E82C240639000812F9 /* CustomCarView.swift in Sources */,
 				F3330FDD2C14A6FC00C3CB95 /* Rental_ServiceApp.swift in Sources */,
+				F3682E402C2E8D9C00616EC1 /* NotificationsView.swift in Sources */,
 				F36819DB2C21ACEF000812F9 /* Brand.swift in Sources */,
 				F36819E32C23FD3F000812F9 /* PopularBrandsView.swift in Sources */,
 				F3682E342C2E83C300616EC1 /* TripDateView.swift in Sources */,
@@ -451,6 +458,7 @@
 				F39D479E2C17217200A5074C /* ExploreView.swift in Sources */,
 				F36819EF2C2446D9000812F9 /* DetailView.swift in Sources */,
 				F3682E382C2E8C6300616EC1 /* TripsView.swift in Sources */,
+				F3682E3E2C2E8D8400616EC1 /* InboxView.swift in Sources */,
 				F3682E362C2E83DC00616EC1 /* MyInsurance.swift in Sources */,
 				F3682E322C2E834100616EC1 /* EmptyElement.swift in Sources */,
 				F36819E52C240316000812F9 /* Car.swift in Sources */,

@@ -28,11 +28,11 @@ struct DetailView: View {
             VStack(alignment: .leading,spacing: 15) {
                 ImageViewPager(viewModel: viewModel, index: index)
                 VStack(alignment: .leading,spacing: 15) {
-                    Text(viewModel.car[index].carName)
+                    Text(viewModel.cars[index].carName)
                         .font(.headline)
                         .fontWeight(.bold)
                     HStack(spacing: 2) {
-                        Text(String(format: "%.1f", viewModel.car[index].rating))
+                        Text(String(format: "%.1f", viewModel.cars[index].rating))
 
                         Image(systemName: "star.fill")
                             .foregroundStyle(.orange)
@@ -46,15 +46,15 @@ struct DetailView: View {
                 Divider()
                 CancellationView(title: "Cancellation policy", message: "Free cancellation")
                 Divider()
-                CarInfoView(title: "Distance included", message: viewModel.car[index].maxDistance == nil ? "Unlimited" : "\(viewModel.car[index].maxDistance ?? 0) km")
+                CarInfoView(title: "Distance included", message: viewModel.cars[index].maxDistance == nil ? "Unlimited" : "\(viewModel.cars[index].maxDistance ?? 0) km")
                 Divider()
                 InsuranceInfoView(title: "Insurance & Protection", message: viewModel.cars[index].insurance)
                 Divider()
-                CarBasicsView(title: "Car Basics", numberOfSeats: viewModel.car[index].numberOfSeats, numberOfDoors: viewModel.car[index].numberOfDoors, gasType: viewModel.car[index].GasType)
+                CarBasicsView(title: "Car Basics", numberOfSeats: viewModel.cars[index].numberOfSeats, numberOfDoors: viewModel.cars[index].numberOfDoors, gasType: viewModel.cars[index].GasType)
                 Divider()
-                CarInfoView(title: "Description", message: viewModel.car[index].description)
+                CarInfoView(title: "Description", message: viewModel.cars[index].description)
                 Divider()
-                HostView(title: "Hosted by", message:  viewModel.car[index].hostName, imageName: viewModel.car[index].hostImageName, joinDate:viewModel.car[index].hostJoinDate)
+                HostView(title: "Hosted by", message:  viewModel.cars[index].hostName, imageName: viewModel.cars[index].hostImageName, joinDate:viewModel.cars[index].hostJoinDate)
                 Spacer()
                     .frame(height: 120)
 
@@ -72,7 +72,7 @@ struct DetailView: View {
                         .frame(width: UIScreen.main.bounds.width, height: 120)
                     HStack {
                         VStack {
-                            Text("\(viewModel.car[index].pricePerDay)$ per day")
+                            Text("\(viewModel.cars[index].pricePerDay)$ per day")
                                 .font(.headline)
                                 .fontWeight(.semibold)
                             Text("\(viewModel.cars[index].pricePerDay * 3)$ est. total")
@@ -153,10 +153,10 @@ struct CancellationView: View {
                     Text(message)
                     Text("Full refund before: ")
                         .font(.footnote)
-                        .foregroundStyle(.gray) +
+                        .foregroundColor(.gray) +
                     Text(Date(),style: .date)
                         .font(.footnote)
-                        .foregroundStyle(.gray)
+                        .foregroundColor(.gray)
                 }
             }
 

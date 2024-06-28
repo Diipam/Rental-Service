@@ -15,7 +15,7 @@ struct CustomCarView: View {
     init(index: Int, viewModel: ExploreViewModel) {
         self.index = index
         self._viewModel = StateObject(wrappedValue: viewModel)
-        self.isFavorite = viewModel.cars[index].isFavourite
+        self.isFavorite = viewModel.cars[index].isFavorite
     }
     var body: some View {
         RoundedRectangle(cornerRadius: 10)
@@ -23,24 +23,24 @@ struct CustomCarView: View {
             .frame(height: 120)
             .overlay {
                 HStack(spacing: 10) {
-                    Image(viewModel.car[index].mainImageName)
+                    Image(viewModel.cars[index].mainImageName)
                         .resizable()
                         .frame(width: 80,height: 50)
                         .scaledToFit()
                     VStack(alignment: .leading, spacing: 12) {
-                        Text(viewModel.car[index].carName)
+                        Text(viewModel.cars[index].carName)
                             .font(.footnote)
                             .fontWeight(.semibold)
                             .foregroundStyle(.black)
                         HStack {
                             Image(systemName: "star.fill")
                                 .foregroundStyle(.orange)
-                            Text(String(format: "%.1f", viewModel.car[index].rating))
+                            Text(String(format: "%.1f", viewModel.cars[index].rating))
                                 .font(.footnote)
                                 .fontWeight(.semibold)
                                 .foregroundStyle(.black)
                         }
-                        Text("By \(viewModel.car[index].hostName)")
+                        Text("By \(viewModel.cars[index].hostName)")
                             .font(.footnote)
                             .foregroundStyle(.gray)
                     }

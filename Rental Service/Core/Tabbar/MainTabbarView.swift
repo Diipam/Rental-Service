@@ -25,7 +25,7 @@ struct MainTabbarView: View {
                 .onAppear{
                     selectedTab = 0
                 }
-            FavoritesView(viewModel: viewModel)
+            FavouriteView(viewModel: viewModel)
                 .tabItem {
                     VStack {
                         Image(systemName: "heart")

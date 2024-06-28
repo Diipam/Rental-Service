@@ -22,7 +22,7 @@ struct ExploreView: View {
                     VStack {
                         Spacer()
                             .frame(height: 150)
-                        CustomSearchBar()
+                        CustomSearchbar()
                         Spacer()
                             .frame(height: 60)
                         PopularBrandsView(viewModel: viewModel)

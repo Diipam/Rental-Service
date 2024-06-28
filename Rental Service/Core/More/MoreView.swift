@@ -72,13 +72,13 @@ struct HeaderView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack(spacing: 15) {
-                Image("michael_scott")
+                Image("DeepamDhakal")
                     .resizable()
                     .frame(width: 60, height: 60)
                     .foregroundStyle(.gray)
                     .clipShape(Circle())
                 VStack(alignment: .leading) {
-                    Text("Wanda Maximov")
+                    Text("Deepam Dhakal")
                         .font(.headline)
                         .fontWeight(.semibold)
                         .foregroundStyle(.black)

@@ -12,15 +12,15 @@ struct FavouriteView: View {
     var favouriteCar: [Car]
     init(viewModel: ExploreViewModel) {
         self._viewModel = StateObject(wrappedValue: viewModel)
-        self.favouriteCar = viewModel.car.filter({$0.isFavourite})
+        self.favouriteCar = viewModel.cars.filter({$0.isFavorite})
     }
 
     var body: some View {
         NavigationStack {
             VStack {
                 ForEach(favouriteCar) { cars in
-                    let index = viewModel.car.firstIndex(where: {$0 == cars}) ?? 0
-                    CustomCarView(viewModel: viewModel, index: index)
+                    let index = viewModel.cars.firstIndex(where: {$0 == cars}) ?? 0
+                    CustomCarView(index: index, viewModel: viewModel)
                         .padding()
                 }
                 Spacer()
