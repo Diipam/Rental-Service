@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TopCarView: View {
+struct TopCarsView: View {
     @StateObject var viewModel: ExploreViewModel
     init(viewModel: ExploreViewModel) {
         self._viewModel = StateObject(wrappedValue: viewModel)
@@ -22,13 +22,19 @@ struct TopCarView: View {
             }
             ForEach(viewModel.car) {cars in
                 let index = viewModel.car.firstIndex(where: {$0 == cars}) ?? 0
-                CustomCarView(viewModel: viewModel, index: index)
-                    .padding(.bottom)
+                NavigationLink {
+                    DetailView(viewModel: viewModel, index: index)
+                } label: {
+                    CustomCarView(index: index, viewModel: viewModel)
+                        .padding(.bottom)
+                }
+
+
             }
         }
         .padding()    }
 }
 
 #Preview {
-    TopCarView(viewModel: ExploreViewModel())
+    TopCarsView(viewModel: ExploreViewModel())
 }

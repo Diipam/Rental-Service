@@ -7,9 +7,12 @@
 
 import Foundation
 
-struct Brands: Identifiable, Hashable, Codable {
+struct Brand: Identifiable,Hashable,Codable {
+
     let id: String
-    let brandname: String
+    let brandName: String
     let imageName: String
-    var carIDs: [String]
+    var carIds: [String]
+
 }
+

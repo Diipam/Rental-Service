@@ -8,23 +8,31 @@
 import SwiftUI
 
 struct ExploreView: View {
-    @StateObject var viewModel = ExploreViewModel()
+    @State private var searchText: String = ""
+    private var widthSearchBar: CGFloat = UIScreen.main.bounds.width - 30
+    @StateObject var viewModel: ExploreViewModel
     init(viewModel: ExploreViewModel) {
         self._viewModel = StateObject(wrappedValue: viewModel)
     }
     var body: some View {
         NavigationStack {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 ZStack {
-                    GradientColorbackground()
+                    GradientColorBackground()
                     VStack {
-                        Spacer().frame(height: 150)
-                        CustomSearchbar()
-                        Spacer().frame(height: 60)
+                        Spacer()
+                            .frame(height: 150)
+                        CustomSearchBar()
+                        Spacer()
+                            .frame(height: 60)
                         PopularBrandsView(viewModel: viewModel)
-                        TopCarView(viewModel: viewModel)
+                        TopCarsView(viewModel: viewModel)
+                        Spacer()
+                            .frame(height: 50)
                     }
                 }
+
+
             }
             .navigationStackModifier()
         }
@@ -35,13 +43,12 @@ struct ExploreView: View {
     ExploreView(viewModel: ExploreViewModel())
 }
 
-struct GradientColorbackground: View {
+struct GradientColorBackground: View {
     var body: some View {
         VStack {
-            LinearGradient(colors: [.gray, .blue], startPoint: .top, endPoint: .bottom)
-                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 2)
+            LinearGradient(colors: [Color(.systemGray),.blue], startPoint: .top, endPoint: .center)
+                .frame(width: UIScreen.main.bounds.width,height: UIScreen.main.bounds.height / 2)
             Spacer()
         }
     }
 }
-

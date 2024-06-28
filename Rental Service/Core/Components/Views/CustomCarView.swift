@@ -5,56 +5,59 @@
 //  Created by Smart Solar Nepal on 20/06/2024.
 //
 
+
 import SwiftUI
 
 struct CustomCarView: View {
-    @StateObject var viewModel: ExploreViewModel
-    @State private var isFavourite: Bool
     var index: Int
-    init(viewModel: ExploreViewModel, index: Int) {
-        self._viewModel = StateObject(wrappedValue: viewModel)
-        self.isFavourite = viewModel.car[index].isFavourite
+    @StateObject var viewModel: ExploreViewModel
+    @State private var isFavorite: Bool
+    init(index: Int, viewModel: ExploreViewModel) {
         self.index = index
+        self._viewModel = StateObject(wrappedValue: viewModel)
+        self.isFavorite = viewModel.cars[index].isFavourite
     }
-
     var body: some View {
-            RoundedRectangle(cornerRadius: 15)
-                .fill(.white)
-                .frame(height: 150)
-                .overlay {
-                    HStack {
-                        Image(viewModel.car[index].mainImageName)
-                            .resizable()
-                            .frame(width: 100, height: 50)
-                        VStack(alignment: .leading, spacing: 10) {
-                            Text(viewModel.car[index].carName)
-                                .font(.headline)
+        RoundedRectangle(cornerRadius: 10)
+            .fill(.white)
+            .frame(height: 120)
+            .overlay {
+                HStack(spacing: 10) {
+                    Image(viewModel.car[index].mainImageName)
+                        .resizable()
+                        .frame(width: 80,height: 50)
+                        .scaledToFit()
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text(viewModel.car[index].carName)
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.black)
+                        HStack {
+                            Image(systemName: "star.fill")
+                                .foregroundStyle(.orange)
+                            Text(String(format: "%.1f", viewModel.car[index].rating))
+                                .font(.footnote)
                                 .fontWeight(.semibold)
-                            HStack {
-                                Image(systemName: "star.fill")
-                                    .foregroundStyle(.orange)
-                                Text(String(format: "%.1f", viewModel.car[index].rating))
-                                    .font(.subheadline)
-                                    .fontWeight(.semibold)
-                            }
-                            Text("By Dhakal Company Co.ltd ")
-                                .foregroundStyle(.gray)
-                                .font(.subheadline)
+                                .foregroundStyle(.black)
                         }
-                        Spacer()
-                        Button(action: {
-                            isFavourite.toggle()
-                        }, label: {
-                            Image(systemName: isFavourite ? "heart.fill" : "heart")
-                                .foregroundStyle(.red)
-                        })
+                        Text("By \(viewModel.car[index].hostName)")
+                            .font(.footnote)
+                            .foregroundStyle(.gray)
                     }
-                    .padding(.horizontal)
+                    Spacer()
+                    Button(action: {
+                        isFavorite.toggle()
+                    }, label: {
+                        Image(systemName: isFavorite ? "heart.fill" : "heart")
+                            .foregroundStyle(.red)
+                    })
 
                 }
+                .padding()
+        }
     }
 }
 
 #Preview {
-    CustomCarView(viewModel: ExploreViewModel(), index: 0)
+    CustomCarView(index: 0, viewModel: ExploreViewModel())
 }

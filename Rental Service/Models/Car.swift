@@ -7,22 +7,23 @@
 
 import Foundation
 
-struct Car : Identifiable, Hashable, Codable {
+struct Car: Identifiable,Codable,Hashable {
+
     let id: String
     let carName: String
     var rating: Double
-    var brand: String
+    let brand: String
     var pricePerDay: Int
     var description: String
     var mainImageName: String
-    var imageName: [String]
+    var imagesNames: [String]
     var insurance: String
-    var maxdistance: Float?
+    var maxDistance: Float?
     var numberOfSeats: Int
-    var gasType: String
+    var numberOfDoors: Int
+    var GasType: String
     var hostName: String
-    var hostImage: String
+    var hostImageName: String
     var hostJoinDate: String
-    var isFavourite: Bool
-
+    var isFavorite: Bool
 }
